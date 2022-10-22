@@ -30,18 +30,14 @@ const func_pro = () => {
         pro = 1;
         target = document.getElementById("pro");
         target.innerHTML = "pro version";
-        max_count.style.display = "block";
-        kakuritu.style.display ="block";
-        num.style.display ="block";
+        inf.style.display = "block";
         console.log(pro);
     } else {
         // proを解除
         pro = 0;
         target = document.getElementById("pro");
         target.innerHTML = "";
-        max_count.style.display ="none";
-        kakuritu.style.display ="none";
-        num.style.display ="none";
+        inf.style.display ="none";
         console.log(pro);
     }
 }
@@ -169,18 +165,14 @@ const func_kom = () => {
         const music = new Audio('se/ban3.wav');
         music.volume = 0.5;
         music.play();
-        if (pro == 0) {
-            clicked_ban()
-        }
+        clicked_ban()
     } else if (kakuritu == 0.0000059604644775390625) {
         target = document.getElementById("rare");
         target.innerHTML = "まじやばすぎる";
         const music = new Audio('se/ban4.wav');
         music.volume = 0.5;
         music.play();
-        if (pro == 0) {
-            clicked_ban()
-        }
+        clicked_ban()
     } else {
         target = document.getElementById("rare");
         target.innerHTML = "暇人＾＾;";

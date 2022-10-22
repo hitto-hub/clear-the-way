@@ -36,13 +36,16 @@ const func_kom = () => {
     }
     target = document.getElementById("output");
     target.innerHTML = output;
-    target = document.getElementById("output1");
+    target = document.getElementById("count");
     target.innerHTML = "";
     if (output == "コムドットが通るから道をあけろ俺らが日本を獲る"){
-        target = document.getElementById("output1");
+        // ここにコムドットだった時の処理を書く
+        target = document.getElementById("count");
         target.innerHTML = "おまえがコムドットだ！";
+    } else {
+        // ここにコムドットじゃなかった時の処理を書く
+        var output = document.getElementById("output").innerHTML;
+        var count = output.length;
+        document.getElementById("count").innerHTML = count;
     }
-    var output = document.getElementById("output").innerHTML;
-    var count = output.length;
-    document.getElementById("count").innerHTML = count;
 }

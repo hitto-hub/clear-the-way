@@ -6,19 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>コムドットおみくじ</title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
+    <!--スクリプト読み込み 始まり-->
     <script src="komudotto.js"></script>
-
-    <h1 class="text-center mt-5">コムドットおみくじ</h1>
-    <div class="d-grid gap-2 col-2 mx-auto">
-        <button type="button" class="btn btn-primary mt-4" onclick="func_kom()">引く</button>
+    <!--スクリプト読み込み 終わり-->
+    <!-- ヘッダー 始まり -->
+    <nav class="navbar navbar-expand-md fixed-top p-0 sticky-top" style="background-color: #f7b9b5;">
+        <div class="container"><a class="text-dark navbar-brand fs-3 fw-bold" href="#page-top">コムドットおみくじ</a></div>
+    </nav>
+    <!-- ヘッダー 終わり -->
+    <!-- コンテンツ 始まり -->
+    <div class="position-relative">
+        <h1 class="text-center mt-5">コムドットおみくじ</h1>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <button type="button" class="btn btn-primary mt-4" onclick="func_kom()">引く</button>
+            </div>
+        <p class="text-center mt-5" id="output"></p>
+        <p class="text-center" id="count"></p>
     </div>
-
-
-    <p class="text-center mt-5" id="output"></p>
-    <p class="text-center" id="count"></p>
-
+    <!-- コンテンツ 終わり -->
+    <!-- フッター 始まり -->
+    <footer class="footer mt-auto py-3 fixed-bottom" style="background-color: #e5d095;">
+        <div class="container text-center">
+            <span class="text-muted">contributed by
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/hitto-hub">
+                    hitto-hub
+                </a>
+            </span>
+        </div>
+    </footer>
+    <!-- フッター 終わり -->
 </body>
 </html>

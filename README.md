@@ -12,3 +12,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─日本を  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─獲る(break)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─あけろ俺ら(ふりだしに戻る)  
+
+## 学んだこと
+
+bootstrapのclass="fixed-top sticky-top"と"fixed-bottom"は、いい感じ。

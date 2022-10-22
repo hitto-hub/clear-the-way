@@ -42,4 +42,7 @@ const func_kom = () => {
         target = document.getElementById("output1");
         target.innerHTML = "おまえがコムドットだ！";
     }
+    var output = document.getElementById("output").innerHTML;
+    var count = output.length;
+    document.getElementById("count").innerHTML = count;
 }

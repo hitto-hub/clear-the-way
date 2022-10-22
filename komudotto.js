@@ -3,7 +3,6 @@ const func_kom = () => {
         return Math.floor(Math.random() * max);
         }
 
-
     var komudotto = "コムドット"
     var ga = "が"
     var tooru = "通る"
@@ -42,6 +41,8 @@ const func_kom = () => {
         // ここにコムドットだった時の処理を書く
         target = document.getElementById("count");
         target.innerHTML = "おまえがコムドットだ！";
+        const music = new Audio('se/fafa-.wav');
+        music.play();
     } else {
         // ここにコムドットじゃなかった時の処理を書く
         var output = document.getElementById("output").innerHTML;

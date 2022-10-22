@@ -1,6 +1,7 @@
 // 変数の宣言
 var not = 0; // 何回押したか
 var pro = 0; // pro 0 or 1
+var max = 0;
 // ボタンdisableの関数、etc...
 function btnDisable(){
     document.getElementById("btn").disabled = true;
@@ -29,6 +30,7 @@ const func_pro = () => {
         pro = 1;
         target = document.getElementById("pro");
         target.innerHTML = "pro version";
+        max_count.style.display = "block";
         kakuritu.style.display ="block";
         num.style.display ="block";
         console.log(pro);
@@ -37,6 +39,7 @@ const func_pro = () => {
         pro = 0;
         target = document.getElementById("pro");
         target.innerHTML = "";
+        max_count.style.display ="none";
         kakuritu.style.display ="none";
         num.style.display ="none";
         console.log(pro);
@@ -104,6 +107,11 @@ const func_kom = () => {
         // ここにコムドットじゃなかった時の処理を書く
         target = document.getElementById("count");
         target.innerHTML =output.length + "文字";
+    }
+    if (max < output.length){
+        max = output.length
+        target = document.getElementById("max_count");
+        target.innerHTML = "最長記録：" + max + "文字";
     }
     // rareの処理
     if (kakuritu == 25) {

@@ -1,6 +1,6 @@
 // 変数の宣言
-var not = 0;
-var pro = 0;
+var not = 0; // 何回押したか
+var pro = 0; // pro 0 or 1
 // ボタンdisableの関数、etc...
 function btnDisable(){
     document.getElementById("btn").disabled = true;
@@ -25,14 +25,20 @@ function clicked_ez(){
 // pro
 const func_pro = () => {
     if (pro == 0) {
+        // proになる
         pro = 1;
         target = document.getElementById("pro");
         target.innerHTML = "pro version";
+        kakuritu.style.display ="block";
+        num.style.display ="block";
         console.log(pro);
     } else {
+        // proを解除
         pro = 0;
         target = document.getElementById("pro");
         target.innerHTML = "";
+        kakuritu.style.display ="none";
+        num.style.display ="none";
         console.log(pro);
     }
 }
@@ -87,6 +93,7 @@ const func_kom = () => {
         // ここにコムドットだった時の処理を書く
         target = document.getElementById("count");
         target.innerHTML = "おまえがコムドットだ！";
+        // 演出
         if (pro == 0) {
             const music = new Audio('se/fafa-.wav');
             music.volume = 0.1;
@@ -95,9 +102,8 @@ const func_kom = () => {
         }
     } else {
         // ここにコムドットじゃなかった時の処理を書く
-        var output = document.getElementById("output").innerHTML;
-        var count = output.length;
-        document.getElementById("count").innerHTML = count + "文字";
+        target = document.getElementById("count");
+        target.innerHTML =output.length + "文字";
     }
     // rareの処理
     if (kakuritu == 25) {

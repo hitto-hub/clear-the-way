@@ -9,7 +9,7 @@ function btnAble(){
 }
 function clicked(){
     statusDis  = setInterval(btnDisable , 1);
-    statusAble = setInterval(btnAble , 2000);
+    statusAble = setInterval(btnAble , 5000);
 }
 function clicked_ban(){
     statusDis  = setInterval(btnDisable , 1);

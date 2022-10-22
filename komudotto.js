@@ -131,14 +131,20 @@ const func_kom = () => {
     } else if (kakuritu == 0.006103515625) {
         target = document.getElementById("rare");
         target.innerHTML = "ぼちぼちすごい";
+        if (pro == 0) {
+            const music = new Audio('se/kya-yello.wav');
+            music.volum = 0.5;
+            music.play();
+            clicked_ban()
+        }
     // 厚い壁
     } else if (kakuritu == 0.00152587890625) {
         target = document.getElementById("rare");
         target.innerHTML = "まあまあすごい";
-        if (pro == 0) {
-        const music = new Audio('se/kya-yello.wav');
+        const music = new Audio('se/ban1.wav');
         music.volume = 0.5;
         music.play();
+        if (pro == 0) {
             clicked_ban()
         }
     } else if (kakuritu == 0.0003814697265625) {

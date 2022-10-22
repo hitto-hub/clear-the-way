@@ -11,6 +11,10 @@ function clicked(){
     statusDis  = setInterval(btnDisable , 1);
     statusAble = setInterval(btnAble , 2000);
 }
+function clicked_ban(){
+    statusDis  = setInterval(btnDisable , 1);
+    statusAble = setInterval(btnAble , 500);
+}
 function clicked_ez(){
     statusDis  = setInterval(btnDisable , 1);
     statusAble = setInterval(btnAble , 200);
@@ -77,9 +81,6 @@ const func_kom = () => {
         var count = output.length;
         document.getElementById("count").innerHTML = count + "文字";
     }
-    // 確率を表示する
-    target = document.getElementById("kakuritu");
-    target.innerHTML = kakuritu + "%";
     // rareの処理
     if (kakuritu == 25) {
         target = document.getElementById("rare");
@@ -106,34 +107,49 @@ const func_kom = () => {
     } else if (kakuritu == 0.00152587890625) {
         target = document.getElementById("rare");
         target.innerHTML = "まあまあすごい";
+        const music = new Audio('se/kya-yello.wav');
+        music.volume = 0.5;
+        music.play();
+        clicked_ban()
     } else if (kakuritu == 0.0003814697265625) {
         target = document.getElementById("rare");
         target.innerHTML = "すごい";
+        const music = new Audio('se/ban1.wav');
+        music.volume = 0.5;
+        music.play();
+        clicked_ban()
     } else if (kakuritu == 0.000095367431640625) {
         target = document.getElementById("rare");
         target.innerHTML = "すごすぎる";
+        const music = new Audio('se/ban2.wav');
+        music.volume = 0.5;
+        music.play();
+        clicked_ban()
     } else if (kakuritu == 0.00002384185791015625) {
         target = document.getElementById("rare");
         target.innerHTML = "まじやばい";
+        const music = new Audio('se/ban3.wav');
+        music.volume = 0.5;
+        music.play();
+        clicked_ban()
     } else if (kakuritu == 0.0000059604644775390625) {
         target = document.getElementById("rare");
         target.innerHTML = "まじやばすぎる";
+        const music = new Audio('se/ban4.wav');
+        music.volume = 0.5;
+        music.play();
+        clicked_ban()
     } else {
         target = document.getElementById("rare");
         target.innerHTML = "暇人＾＾;";
-    }
-    // se
-    if (kakuritu <= 0.00152587890625 && kakuritu >= 0.0000059604644775390625) {
         const music = new Audio('se/babanbabann.wav');
         music.volume = 0.5;
         music.play();
         clicked()
-    } else if (kakuritu < 0.0000059604644775390625) {
-        const music = new Audio('se/;;.wav');
-        music.volume = 0.5;
-        music.play();
-        clicked()
     }
+    // 確率を表示する
+    target = document.getElementById("kakuritu");
+    target.innerHTML = kakuritu + "%";
     // 何回押したか
     not++;
     document.getElementById("num").innerHTML = not;

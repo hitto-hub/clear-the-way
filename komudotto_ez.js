@@ -162,45 +162,35 @@ const func_kom = () => {
         const music = new Audio('se/babanbabann.wav');
         music.volume = 0.5;
         music.play();
-        if (pro == 0) {
-            clicked_ban()
-        }
+        clicked_ban()
     } else if (kakuritu == 0.0003814697265625) {
         target = document.getElementById("rare");
         target.innerHTML = "すごい";
         const music = new Audio('se/babanbabann.wav');
         music.volume = 0.5;
         music.play();
-        if (pro == 0) {
-            clicked_ban()
-        }
+        clicked_ban()
     } else if (kakuritu == 0.000095367431640625) {
         target = document.getElementById("rare");
         target.innerHTML = "すごすぎる";
         const music = new Audio('se/babanbabann.wav');
         music.volume = 0.5;
         music.play();
-        if (pro == 0) {
-            clicked_ban()
-        }
+        clicked_ban()
     } else if (kakuritu == 0.00002384185791015625) {
         target = document.getElementById("rare");
         target.innerHTML = "まじやばい";
         const music = new Audio('se/babanbabann.wav');
         music.volume = 0.5;
         music.play();
-        if (pro == 0) {
-            clicked_ban()
-        }
+        clicked_ban()
     } else if (kakuritu == 0.0000059604644775390625) {
         target = document.getElementById("rare");
         target.innerHTML = "まじやばすぎる";
         const music = new Audio('se/babanbabann.wav');
         music.volume = 0.5;
         music.play();
-        if (pro == 0) {
-            clicked_ban()
-        }
+        clicked_ban()
     } else {
         target = document.getElementById("rare");
         target.innerHTML = "暇人＾＾;";

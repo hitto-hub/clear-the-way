@@ -4,6 +4,8 @@
 
 [ここ](https://hitto.me/clear-the-way/)
 
+ヘッダーの「コムドットおみくじ」をクリックすると、イージーモードに飛べます。
+
 ## while
 
 ![komudotto](img/komudotto.png "komudotto")

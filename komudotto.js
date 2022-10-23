@@ -95,7 +95,7 @@ const func_kom = () => {
         // 演出
         if (pro == 0) {
             const music = new Audio('se/fafa-.wav');
-            music.volume = 0.1;
+            music.volume = 0.3;
             music.play();
             clicked_ez();
         }
@@ -183,7 +183,7 @@ const func_kom = () => {
         target = document.getElementById("rare");
         target.innerHTML = "暇人＾＾;";
         const music = new Audio('se/babanbabann.wav');
-        music.volume = 0.5;
+        music.volume = 1;
         music.play();
         clicked()
     }

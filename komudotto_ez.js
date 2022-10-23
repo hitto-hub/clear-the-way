@@ -95,7 +95,7 @@ const func_kom = () => {
         // 演出
         if (pro == 0) {
             const music = new Audio('se/fafa-.wav');
-            music.volume = 0.1;
+            music.volume = 0.3;
             music.play();
             clicked_ez();
         }
@@ -123,7 +123,7 @@ const func_kom = () => {
         target = document.getElementById("rare");
         target.innerHTML = "まあまあ";
         const music = new Audio('se/ban1.wav');
-        music.volume = 0.5;
+        music.volume = 0.3;
         music.play();
         if (pro == 0) {
             clicked_ban()
@@ -132,7 +132,7 @@ const func_kom = () => {
         target = document.getElementById("rare");
         target.innerHTML = "そこそこ";
         const music = new Audio('se/ban2.wav');
-        music.volume = 0.5;
+        music.volume = 0.3;
         music.play();
         if (pro == 0) {
             clicked_ban()
@@ -141,7 +141,7 @@ const func_kom = () => {
         target = document.getElementById("rare");
         target.innerHTML = "ちょっとだけすごい";
         const music = new Audio('se/ban3.wav');
-        music.volume = 0.5;
+        music.volume = 0.3;
         music.play();
         if (pro == 0) {
             clicked_ban()
@@ -150,7 +150,7 @@ const func_kom = () => {
         target = document.getElementById("rare");
         target.innerHTML = "ぼちぼちすごい";
         const music = new Audio('se/ban4.wav');
-        music.volume = 0.5;
+        music.volume = 0.3;
         music.play();
         if (pro == 0) {
             clicked_ban()
@@ -205,11 +205,8 @@ const func_kom = () => {
         target = document.getElementById("rare");
         target.innerHTML = "暇人＾＾;";
         const music = new Audio('se/babanbabann.wav');
-        music.volume = 0.5;
         music.play();
-        if (pro == 0) {
-            clicked_ban()
-        }
+        clicked()
     }
     // 確率を表示する
     target = document.getElementById("kakuritu");

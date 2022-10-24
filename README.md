@@ -14,6 +14,14 @@
 
 bootstrapのclass="fixed-top sticky-top"と"fixed-bottom"は、いい感じ。
 
+jsはいい感じ。
+
 ## その他
 
 [se使ってもいいみたい](https://www.riotgames.com/ja/legal)
+
+## おまけ
+
+### コメント
+
+なんかいろいろ学べてよかった。

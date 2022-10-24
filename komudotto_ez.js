@@ -1,3 +1,27 @@
+window.onload = function(){
+    // ページ読み込み時に実行したい処理
+    music = new Audio('se/kya-yello.wav');
+    music.volume = 0;
+    music.play();
+    music = new Audio('se/fafa-.wav');
+    music.volume = 0;
+    music.play();
+    music = new Audio('se/ban1.wav');
+    music.volume = 0;
+    music.play();
+    music = new Audio('se/ban2.wav');
+    music.volume = 0;
+    music.play();
+    music = new Audio('se/ban3.wav');
+    music.volume = 0;
+    music.play();
+    music = new Audio('se/ban4.wav');
+    music.volume = 0;
+    music.play();
+    music = new Audio('se/babanbabann.wav');
+    music.volume = 0;
+    music.play();
+}
 // 変数の宣言
 var not = 0; // 何回押したか
 var pro = 0; // pro 0 or 1
